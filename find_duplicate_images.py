@@ -89,10 +89,10 @@ class DuplicateFinderApp:
 
         # Style Configuration
         style = ttk.Style()
-        style.theme_use('clam')
+        style.theme_use('aqua')
         style.configure('TFrame', background='#f0f0f0')
-        style.configure('TLabel', background='#f0f0f0')
-        style.configure('Success.TLabel', background='#a3d9a3', foreground='#000000', padding=5, font=('Arial', 10, 'italic'))
+        style.configure('TLabel', background='#A71BDE')
+        style.configure('Success.TLabel', background='#a3d9a3', foreground='#A71BDE', padding=5, font=('Arial', 10, 'italic'))
 
         # 1. Folder Selection Frame
         self.folder_frame = ttk.Frame(master, padding="10")
@@ -102,7 +102,7 @@ class DuplicateFinderApp:
         self.folder_label.pack(side='left', padx=(0, 5))
 
         self.folder_entry = ttk.Label(self.folder_frame, textvariable=self.target_folder,
-                                      background='#e0e0e0', relief='groove', anchor='w',
+                                      background='#A71BDE', relief='groove', anchor='w',
                                       style='TLabel')
         self.folder_entry.pack(side='left', fill='x', expand=True, padx=(0, 10), ipady=3)
 
