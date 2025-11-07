@@ -15,6 +15,7 @@ DUPLICATES_FOLDER_NAME = "duplicates"
 IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff']
 PHASH_CUTOFF = 5 # Used for fuzzy matching. Lower number means stricter matching.
 
+
 # --- Core Helper Functions ---
 
 def get_image_paths(folder_path, recursive=True):
