@@ -1,10 +1,10 @@
 import os
 import shutil
 import threading
+import hashlib
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
-# Third-party libraries (must be installed with pip install Pillow imagehash)
 try:
     from PIL import Image, ImageChops
     import imagehash
@@ -107,8 +107,8 @@ class DuplicateFinderApp:
 
         # Button styling for better contrast
         style.map('TButton',
-                  background=[('active', '#545454')],
-                  foreground=[('active', 'white')])
+                  background=[('active', '#229933')],
+                  foreground=[('active', '#555555')])
 
         # --- Layout ---
         main_frame = ttk.Frame(master, padding="15")
@@ -169,8 +169,8 @@ class DuplicateFinderApp:
 
         # Force initial draw and set size
         master.update()
-        master.minsize(550, master.winfo_height())
-        master.maxsize(550, master.winfo_height())
+        master.minsize(600, master.winfo_height())
+        master.maxsize(600, master.winfo_height())
 
 
     def select_folder(self):
@@ -374,12 +374,13 @@ class DuplicateFinderApp:
 
 
 if __name__ == '__main__':
-    try:
-        import hashlib
-    except ImportError:
-        # hashlib is part of the standard library, but this is a safeguard
-        tk.messagebox.showerror("Error", "Required 'hashlib' module is missing.")
-        exit()
+    # Can't replicate but I'm keeping this
+    # try:
+    #     import hashlib
+    # except ImportError:
+    #     # hashlib is part of the standard library, but this is a safeguard
+    #     tk.messagebox.showerror("Error", "Required 'hashlib' module is missing.")
+    #     exit()
 
     root = tk.Tk()
     app = DuplicateFinderApp(root)
