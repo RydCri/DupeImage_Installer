@@ -106,7 +106,7 @@ class DuplicateFinderApp:
                                       style='TLabel')
         self.folder_entry.pack(side='left', fill='x', expand=True, padx=(0, 10), ipady=3)
 
-        self.select_button = ttk.Button(self.folder_frame, text="Select Folder", command=self.select_folder)
+        self.select_button = ttk.Button(self.folder_frame, text="1. Select Folder", command=self.select_folder)
         self.select_button.pack(side='right')
 
         # 2. Scan Mode Selection Frame
