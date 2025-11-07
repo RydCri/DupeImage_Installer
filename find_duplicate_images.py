@@ -90,7 +90,7 @@ class DuplicateFinderApp:
         # Style Configuration
         style = ttk.Style()
         style.theme_use('aqua')
-        style.configure('TFrame', background='#f0f0f0')
+        style.configure('TFrame', background='#000000')
         style.configure('TLabel', background='#A71BDE')
         style.configure('Success.TLabel', background='#a3d9a3', foreground='#A71BDE', padding=5, font=('Arial', 10, 'italic'))
 
@@ -142,7 +142,7 @@ class DuplicateFinderApp:
 
         # 4. Status and Progress
         self.status_text = tk.StringVar()
-        self.status_text.set("1. Click 'Select Folder' to choose the directory to scan.")
+        self.status_text.set("Click 'Select Folder' to choose the directory to scan.")
 
         self.status_label = ttk.Label(master, textvariable=self.status_text, padding="10", font=('Arial', 10, 'italic'), anchor='w')
         self.status_label.pack(fill='x')
