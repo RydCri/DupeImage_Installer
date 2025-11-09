@@ -6,7 +6,7 @@ A simple app built with tkinter and pyinstaller to organize your files.
 4. All duplicates are moved into a new 'duplicates' subfolder.
 
 <br>
-This repo is for contains the source code and can be used for learning the tools used, check the releases page if you'd like the standalone app.
+This contains the source code and can be used for learning the tools used, check the releases page if you'd like the standalone app.
 <br>
 Available for macOS and windows.
 
